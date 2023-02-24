@@ -24,3 +24,7 @@ type Task struct {
 	StatusID    string
 	Status      TaskStatus `gorm:"foreignKey:StatusID;references:ID"`
 }
+
+type GotodoConfiguration struct {
+	BaseDir string `yaml:"base_dir"`
+}
